@@ -41,7 +41,6 @@ URL: http://testsrv1.outdotphp.info/project3/page1.php?button=1
 
 PROJECT 4
 Click buttons, system will save IP and number of times button clicked clicked on http://testsrv1.outdotphp.info/project4/log.txt file
-Click buttons, system will save last button clicked on http://testsrv1.outdotphp.info/project3/log.txt file.
 If somehow not updating, try to reload page to update count.
 IT will display number of times button clicked by IP. 
 
