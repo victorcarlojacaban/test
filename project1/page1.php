@@ -1,6 +1,6 @@
 <?php
 	// get time from param, otherwise get current time
-	$time = $_GET['time'] ?? date('h:i');
+	$time = $_GET['time'] ?? base64_encode(date('h:i'));
 
 	//ex. 11:02 is base64 equevalent to MTE6MDI=
 ?>
