@@ -27,7 +27,7 @@ if (isset($_GET['img'])) {
 		  <h1 class="display-4">Test 1</h1>
 		  <p class="lead">1. Assign pop to query param like. <b>domain/test1.php?pop=yes</b></p>
 		  <p class="lead">2. Assign img to query param like. <b>domain/test1.php?img=1</b></p>
-		  <p class="lead">2. Assign fade yes for image to query param like. <b>domain/test/test1.php?fade=yes</b></p>
+		  <p class="lead">2. Assign fade yes for image to query param like. <b>domain/test1.php?fade=yes</b></p>
 		  <hr class="my-4">
 		  
 		</div>
