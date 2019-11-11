@@ -5,7 +5,7 @@
 $clicks = 1;
 $logFile  = 'log.txt';
 
-$currentIp = $_SERVER['HTTP_CLIENT_IP']?$_SERVER['HTTP_CLIENT_IP']:($_SERVER['HTTP_X_FORWARDED_FOR'] ? $_SERVER['HTTP_X_FORWARDED_FOR']:$_SERVER['REMOTE_ADDR']);
+$currentIp = isset($_SERVER['HTTP_CLIENT_IP']) ?$_SERVER['HTTP_CLIENT_IP']:($_SERVER['HTTP_X_FORWARDED_FOR'] ? $_SERVER['HTTP_X_FORWARDED_FOR']:$_SERVER['REMOTE_ADDR']);
 
 
 // check if log file exist otherwise create
