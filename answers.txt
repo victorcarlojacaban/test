@@ -1,0 +1,48 @@
+TEST 1 
+1. Assign pop to query param like http://testsrv1.outdotphp.info/test1.php?pop=yes.
+2. Assign img to query param like http://testsrv1.outdotphp.info/test1.php?img=1, can also assign http://testsrv1.outdotphp.info/test1.php?img=2 to load image 2
+3. Assign fade yes for image to query param like http://testsrv1.outdotphp.info/test1.php?fade=yes.
+
+TEST 2
+Reload page to update number of views count
+URL is: http://testsrv1.outdotphp.info/test2.php
+
+TEST 3
+Get current and previous IP.
+
+You can play around with IP's by assigning random IP to below block on test3.php file.
+ex. $_SERVER['HTTP_CLIENT_IP'] = '3.4.1.1';
+
+You can see logged current ip on logip.txt file and previous ip on previousip.txt file.
+URL is : http://testsrv1.outdotphp.info/test3.php
+
+
+PROJECT 1
+Assign base64 encoded time to query param like page1.php?time=MTE6MDI= where "MTE6MDI=" is equevalent to 11:02.
+If time is not set on url, system will get the current time.
+
+URL: http://testsrv1.outdotphp.info/project1/page1.php?time=MTE6MDI=
+
+From page 1 click other buttons.
+
+PROJECT 2
+Click buttons, system will save last clicked button in cookie with cokie name "prev_button_clicked"
+
+URL: http://testsrv1.outdotphp.info/project2/page1.php
+
+From page 1 click other buttons, it will display the previous button clicked.
+
+PROJECT 3
+Click buttons, system will save last button clicked on http://testsrv1.outdotphp.info/project3/log.txt file.
+Specify button on url like page3.php?button=3
+IT will display Recorded IP and previous button. 
+
+URL: http://testsrv1.outdotphp.info/project3/page1.php?button=1
+
+PROJECT 4
+Click buttons, system will save IP and number of times button clicked clicked on http://testsrv1.outdotphp.info/project4/log.txt file
+Click buttons, system will save last button clicked on http://testsrv1.outdotphp.info/project3/log.txt file.
+If somehow not updating, try to reload page to update count.
+IT will display number of times button clicked by IP. 
+
+URL: http://testsrv1.outdotphp.info/project4/page1.php

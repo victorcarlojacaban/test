@@ -13,12 +13,13 @@
 	<div class="container">
 
 		<div class="jumbotron">
-		  <h1 class="display-4">Project 4, Page 2</h1>
-		    <p class="lead">Click buttons, system will save last button and IP clicked on <i>project4/log.txt</i> file.
+		  <h1 class="display-4">Project 4, Page 1</h1>
+		    <p class="lead">Click buttons, system will save IP and number of times button clicked clicked on <i>project4/log.txt</i> file.
 		  </p>
 		  <p>If somehow not updating, try to reload page to update count.</p>
 		  <hr class="my-4">
 		</div>
+
 
 		<div id="mainDiv">
 			<h3><span class="contentLog"><?php echo getIpCount(); ?></span></h3>
