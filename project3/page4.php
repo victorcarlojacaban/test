@@ -3,7 +3,9 @@
 
 	$logFile = 'log.txt';
 
-	logIpAndButton($logFile, $_GET['button']);
+	if (isset($_GET['button'])) {
+		logIpAndButton($logFile, $_GET['button']);
+	}
 ?>
 
 <!DOCTYPE html>
@@ -20,11 +22,15 @@
 		  <h1 class="display-4">Project 3, Page 4</h1>
 		  <p class="lead">Click buttons, system will save last button clicked on <i>project3/log.txt</i> file.
 		  </p>
+		   <p>Please specficy button on url like <i>page3.php?button=3</i>
+		  </p>
 		  <hr class="my-4">
 		</div>
 
 		<div id="mainDiv">
-			<h3>Recorded IP and previous button: <?php echo getIpAndButtonLogged($logFile, $_GET['button']); ?></h3><br/>
+			<?php if (isset($_GET['button'])) : ?>
+				<h3>Recorded IP and previous button: <?php echo getIpAndButtonLogged($logFile, $_GET['button']); ?></h3><br/>
+			<?php endif;?>
 		</div>
 	</div>
 </body>
