@@ -17,7 +17,7 @@
 
 		<div class="jumbotron">
 		  <h1 class="display-4">Project 1, Page 1</h1>
-		  <p class="lead">Assign base64 encoded time to query param like. <b>domain/test/project1/page1.php?time=MTE6MDI=</b>
+		  <p class="lead">Assign base64 encoded time to query param like. <b>domain/project1/page1.php?time=MTE6MDI=</b>
 		  	where <i>MTE6MDI=</i> is equevalent to <i>11:02</i>
 		  </p>
 		  <p>If time is not set on url, system will get the current time.</p>
